@@ -9,7 +9,7 @@
     Send a File Test.zip using the Clipboard at 150KB increments
     .NOTES
     Author: jfrmilner
-    Web  : github.com/jfrmilner
+    Web  : https://github.com/jfrmilner/PowerShell-Miscellaneous_Scripts/blob/master/Send-ClipboardFile/Send-ClipboardFile.ps1
     File Name: Send-ClipboardFile.ps1
     Requires: Powershell V2
     Legal: This script is provided "AS IS" with no warranties or guarantees, and confers no rights. You may use, modify, reproduce, and distribute this script file in any way provided that you agree to give the original author credit.
@@ -32,7 +32,7 @@
     process {
         $file = [io.file]::OpenRead($filePath.FullName)
         $buff = New-Object Byte[] $BufferSize
-        $parts = [math]::Ceiling($file.Length / 150KB)
+        $parts = [math]::Ceiling($file.Length / $BufferSize)
         $i = 1
         do {
             $part = ($i.ToString() + "/" + $parts.ToString())

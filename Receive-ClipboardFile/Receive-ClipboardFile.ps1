@@ -1,5 +1,4 @@
-﻿
-function Receive-ClipboardFile {
+﻿function Receive-ClipboardFile {
     <#
     .SYNOPSIS
     Receive a File using the Clipboard as transport.
@@ -10,7 +9,7 @@ function Receive-ClipboardFile {
     Receive a File using the Clipboard
     .NOTES
     Author: jfrmilner
-    Web  : github.com/jfrmilner
+    Web  : https://github.com/jfrmilner/PowerShell-Miscellaneous_Scripts/tree/master/Receive-ClipboardFile
     File Name: Receive-ClipboardFile.ps1
     Requires: Powershell V2
     Legal: This script is provided "AS IS" with no warranties or guarantees, and confers no rights. You may use, modify, reproduce, and distribute this script file in any way provided that you agree to give the original author credit.
